@@ -1,0 +1,27 @@
+name: Mountain
+options:
+  bundleIdPrefix: com.takaoh717
+  deploymentTarget:
+    iOS: 13.0
+targets:
+  Mountain:
+    type: application
+    platform: iOS
+    sources: Mountain
+    settings:
+      base:
+        INFOPLIST_FILE: Mountain/Resources/Info.plist
+        CODE_SIGN_STYLE: Manual
+        TARGETED_DEVICE_FAMILY: 1
+    prebuildScripts:
+      - name: Run SwiftGen
+        script: make swiftgen
+    scheme:
+      gatherCoverageData: true
+  KurashiruTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [MountainTests]
+    dependencies:
+      - target: Mountain
+
