@@ -1,3 +1,8 @@
+.PHONY: setup-mac
+setup-mac:
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+	brew install rbenv ruby-build
+
 .PHONY: install-mint
 install-mint: # Install Mint dependencies
 	mint bootstrap
@@ -9,26 +14,26 @@ install-bundler: # Install Bundler dependencies
 
 .PHONY: install-cocoapods
 install-cocoapods: # Install CocoaPods dependencies and generate workspace
-    bundle exec pod install
+	bundle exec pod install
 
 .PHONY: update-cocoapods
 update-cocoapods: # Update CocoaPods dependencies and generate workspace
-    bundle exec pod update
+	bundle exec pod update
 
 .PHONY: install-carthage
 install-carthage: # Install Carthage dependencies
-    mint run carthage carthage bootstrap --platform iOS --cache-builds
-    $(MAKE) show-carthage-dependencies
+	mint run carthage carthage bootstrap --platform iOS --cache-builds
+	$(MAKE) show-carthage-dependencies
 
 .PHONY: update-carthage
 update-carthage: # Update Carthage dependencies
-    mint run carthage carthage update --platform iOS
-    $(MAKE) show-carthage-dependencies
+	mint run carthage carthage update --platform iOS
+	$(MAKE) show-carthage-dependencies
 
 .PHONY: clean
 clean: # Delete cache
-    xcodebuild clean -alltargets
-    rm -rf ./Pods
-    rm -rf ./Carthage
-    rm -rf ./vendor/bundle
-    rm -rf ./Templates
+	xcodebuild clean -alltargets
+	rm -rf ./Pods
+	rm -rf ./Carthage
+	rm -rf ./vendor/bundle
+	rm -rf ./Templates
