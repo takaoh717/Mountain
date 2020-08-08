@@ -3,6 +3,7 @@ cask_args appdir: "/Applications"
 brew 'mas'
 brew 'rbenv'
 brew 'ruby-build'
+brew 'mint'
 
 cask 'visual-studio-code'
 cask 'google-chrome'
@@ -17,12 +18,11 @@ cask 'gitup'
 cask 'charles'
 cask 'google-japanese-ime'
 
-mas '⌘英かな'
-mas 'Amphetamine'
-mas 'copyclip'
-mas 'developer'
-mas 'magnet'
-mas 'popclip'
+# mas 'Amphetamine'
+# mas 'copyclip'
+# mas 'developer'
+# mas 'magnet'
+# mas 'popclip'
 
 # snap camera
 # ps4 remote controller
