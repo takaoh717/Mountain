@@ -1,8 +1,5 @@
 .PHONY: setup-mac
 setup-mac:
-	xcode-select --install
-	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-	brew install caskroom/cask/brew-cask
 	brew bundle
 
 .PHONY: install-mint

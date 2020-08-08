@@ -17,12 +17,3 @@ cask 'android-studio'
 cask 'gitup'
 cask 'charles'
 cask 'google-japanese-ime'
-
-# mas 'Amphetamine'
-# mas 'copyclip'
-# mas 'developer'
-# mas 'magnet'
-# mas 'popclip'
-
-# snap camera
-# ps4 remote controller
