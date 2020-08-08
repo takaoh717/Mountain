@@ -1,11 +1,17 @@
 .PHONY: setup-mac
 setup-mac:
+	xcode-select --install
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-	brew install rbenv ruby-build
+	brew install caskroom/cask/brew-cask
+	brew bundle
 
 .PHONY: install-mint
 install-mint: # Install Mint dependencies
 	mint bootstrap
+
+.PHONY: update-mac-app
+update-mac-app:
+	brew cask upgrade
 
 .PHONY: install-bundler
 install-bundler: # Install Bundler dependencies
