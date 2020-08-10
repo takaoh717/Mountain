@@ -15,6 +15,14 @@ install-bundler: # Install Bundler dependencies
 	bundle config path vendor/bundle
 	bundle install --jobs 4 --retry 3
 
+.PHONY: install-gem
+install-gem:
+	gem install
+
+.PHONY: update-bundler
+update-bundler: 
+	bundle update
+
 .PHONY: install-cocoapods
 install-cocoapods: # Install CocoaPods dependencies and generate workspace
 	bundle exec pod install
