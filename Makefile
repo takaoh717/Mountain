@@ -41,6 +41,10 @@ update-carthage: # Update Carthage dependencies
 	mint run carthage carthage update --platform iOS
 	$(MAKE) show-carthage-dependencies
 
+.PHONY: run-xcodegen
+run-xcodegen:
+	mint run xcodegen xcodegen generate
+
 .PHONY: clean
 clean: # Delete cache
 	xcodebuild clean -alltargets

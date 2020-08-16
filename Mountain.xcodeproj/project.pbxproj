@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27ADD87186376BFFC10D35CF /* MountainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7886F080C3CD70B192844D9 /* MountainTests.swift */; };
 		499577B566CC6199C09D097F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2AFBAE970E0C50AF1B4477 /* LaunchScreen.storyboard */; };
-		562FCE0BF90E433F94940FAC /* MountainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7886F080C3CD70B192844D9 /* MountainTests.swift */; };
 		6895FCB9AC596146E16F92AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28801ECA7272909EA4CC6F1C /* Assets.xcassets */; };
 		79744B7EFDE7B645CDCA761E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F479B77102E3D36EB38BDD /* ViewController.swift */; };
 		A425C07BB8128A6DF5ED1110 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073A23E6D2045B063B1B14B6 /* SceneDelegate.swift */; };
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C2BE09DFAE0197DE99B4BE2A /* PBXContainerItemProxy */ = {
+		CFA384532FAA0FF48B9EF8F4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C93EBCE60E4FA3B5B1E8B5A4 /* Project object */;
 			proxyType = 1;
@@ -32,8 +32,8 @@
 		28801ECA7272909EA4CC6F1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CC09170545BFB1C6AC7BA59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		68831FECD66DBD7762BD9BD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8D41774EA5B9E59EEB827927 /* KurashiruTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = KurashiruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7886F080C3CD70B192844D9 /* MountainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainTests.swift; sourceTree = "<group>"; };
+		B6A20B3A4BD19D9831B3ACC4 /* MountainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MountainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33563E95CA5B0D6BBEBE138 /* Mountain.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Mountain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF7DC6A3708D8F8DBBAE3E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E66B1CB83BCA90A45766692D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,8 +44,8 @@
 		2E2A67D3C4C14FA42E61BA01 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D41774EA5B9E59EEB827927 /* KurashiruTests.xctest */,
 				C33563E95CA5B0D6BBEBE138 /* Mountain.app */,
+				B6A20B3A4BD19D9831B3ACC4 /* MountainTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,22 +85,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9A27F2FE7566CAFC9E521FE4 /* KurashiruTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D18D3A39AE2B728A9EA10202 /* Build configuration list for PBXNativeTarget "KurashiruTests" */;
-			buildPhases = (
-				14B2FCD259E2F6FD90BA2EC2 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				93BE3CAA29F75FEB823A4947 /* PBXTargetDependency */,
-			);
-			name = KurashiruTests;
-			productName = KurashiruTests;
-			productReference = 8D41774EA5B9E59EEB827927 /* KurashiruTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		A202602152FEE9DACD9ADE32 /* Mountain */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA2087BF6675B61F92767800 /* Build configuration list for PBXNativeTarget "Mountain" */;
@@ -117,6 +101,22 @@
 			productName = Mountain;
 			productReference = C33563E95CA5B0D6BBEBE138 /* Mountain.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DECB3627F22653FA67954F06 /* MountainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045B083868FF0965BBF13ACE /* Build configuration list for PBXNativeTarget "MountainTests" */;
+			buildPhases = (
+				8496655D93992FD9E8A0FC5F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACEFDCD12A2DE93562171DF1 /* PBXTargetDependency */,
+			);
+			name = MountainTests;
+			productName = MountainTests;
+			productReference = B6A20B3A4BD19D9831B3ACC4 /* MountainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -142,8 +142,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9A27F2FE7566CAFC9E521FE4 /* KurashiruTests */,
 				A202602152FEE9DACD9ADE32 /* Mountain */,
+				DECB3627F22653FA67954F06 /* MountainTests */,
 			);
 		};
 /* End PBXProject section */
@@ -183,11 +183,11 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		14B2FCD259E2F6FD90BA2EC2 /* Sources */ = {
+		8496655D93992FD9E8A0FC5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				562FCE0BF90E433F94940FAC /* MountainTests.swift in Sources */,
+				27ADD87186376BFFC10D35CF /* MountainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,10 +204,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		93BE3CAA29F75FEB823A4947 /* PBXTargetDependency */ = {
+		ACEFDCD12A2DE93562171DF1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A202602152FEE9DACD9ADE32 /* Mountain */;
-			targetProxy = C2BE09DFAE0197DE99B4BE2A /* PBXContainerItemProxy */;
+			targetProxy = CFA384532FAA0FF48B9EF8F4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -291,6 +291,40 @@
 			};
 			name = Debug;
 		};
+		65301ADE6396A7C05BC06A6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MountainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.takaoh717.MountainTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mountain.app/Mountain";
+			};
+			name = Debug;
+		};
+		AC24622671AB227758FC01C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MountainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.takaoh717.MountainTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mountain.app/Mountain";
+			};
+			name = Release;
+		};
 		B596FF82FAF46E87CFC9CCF4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -307,23 +341,6 @@
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
-		};
-		DB5DEC396BB9F054632BAEDF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = MountainTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.takaoh717.KurashiruTests;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mountain.app/Mountain";
-			};
-			name = Debug;
 		};
 		DBC164EDAEB7AB46271833D4 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -377,23 +394,6 @@
 			};
 			name = Release;
 		};
-		E89042BEA09C367222A462A3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = MountainTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.takaoh717.KurashiruTests;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mountain.app/Mountain";
-			};
-			name = Release;
-		};
 		FBAD80BEC6A8DFF2EFA881A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -414,6 +414,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		045B083868FF0965BBF13ACE /* Build configuration list for PBXNativeTarget "MountainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65301ADE6396A7C05BC06A6D /* Debug */,
+				AC24622671AB227758FC01C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		155E61777855E9B63C6C88F3 /* Build configuration list for PBXProject "Mountain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -428,15 +437,6 @@
 			buildConfigurations = (
 				FBAD80BEC6A8DFF2EFA881A9 /* Debug */,
 				B596FF82FAF46E87CFC9CCF4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		D18D3A39AE2B728A9EA10202 /* Build configuration list for PBXNativeTarget "KurashiruTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DB5DEC396BB9F054632BAEDF /* Debug */,
-				E89042BEA09C367222A462A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
