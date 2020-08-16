@@ -82,27 +82,27 @@ targets:
         DEVELOPMENT_TEAM: J5WW4LM3TV
         PRODUCT_BUNDLE_IDENTIFIER: com.takaoh717.Mountain
         PRODUCT_NAME: $TARGET_NAME
-        # PROVISIONING_PROFILE_SPECIFIER: 
+        PROVISIONING_PROFILE_SPECIFIER: Project-profile-debug
       Develop:
         SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEVELOP
         CODE_SIGN_IDENTITY: iPhone Distribution
         DEVELOPMENT_TEAM: J5WW4LM3TV
         PRODUCT_BUNDLE_IDENTIFIER: com.takaoh717.Mountain
         PRODUCT_NAME: $TARGET_NAME
-        # PROVISIONING_PROFILE_SPECIFIER: .pbxproj参照
+        PROVISIONING_PROFILE_SPECIFIER: Project-profile-develop
       Staging:
         SWIFT_ACTIVE_COMPILATION_CONDITIONS: STAGING
         CODE_SIGN_IDENTITY: iPhone Distribution
         DEVELOPMENT_TEAM: J5WW4LM3TV
         PRODUCT_BUNDLE_IDENTIFIER: com.takaoh717.Mountain
         PRODUCT_NAME: $TARGET_NAME
-        # PROVISIONING_PROFILE_SPECIFIER: .pbxproj参照
+        PROVISIONING_PROFILE_SPECIFIER: Project-profile-staging
       Release:
         SWIFT_ACTIVE_COMPILATION_CONDITIONS: RELEASE
         CODE_SIGN_IDENTITY: iPhone Developer
         PRODUCT_BUNDLE_IDENTIFIER: com.takaoh717.Mountain
         PRODUCT_NAME: $TARGET_NAME
-        # PROVISIONING_PROFILE_SPECIFIER: .pbxproj参照
+        PROVISIONING_PROFILE_SPECIFIER: Project-profile-release
     scheme:
       gatherCoverageData: true
       testTargets:
