@@ -69,12 +69,9 @@ targets:
     sources: Mountain
     settings:
       base:
-        INFOPLIST_FILE: Mountain/Resources/Info.plist
+        INFOPLIST_FILE: Mountain/Info.plist
         CODE_SIGN_STYLE: Manual
         TARGETED_DEVICE_FAMILY: 1
-    prebuildScripts:
-      - name: Run SwiftGen
-        script: make swiftgen
     configs:
       Debug:
         SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEBUG
