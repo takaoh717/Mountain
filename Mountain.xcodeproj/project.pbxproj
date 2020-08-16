@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		27ADD87186376BFFC10D35CF /* MountainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7886F080C3CD70B192844D9 /* MountainTests.swift */; };
+		420C90A6FE06263CAE0A8CDA /* MountainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF41456D54FDDFB81575B70B /* MountainUITests.swift */; };
 		499577B566CC6199C09D097F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2AFBAE970E0C50AF1B4477 /* LaunchScreen.storyboard */; };
 		6895FCB9AC596146E16F92AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28801ECA7272909EA4CC6F1C /* Assets.xcassets */; };
 		79744B7EFDE7B645CDCA761E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F479B77102E3D36EB38BDD /* ViewController.swift */; };
@@ -17,6 +18,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		59DF5817EAD31C71A307560B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C93EBCE60E4FA3B5B1E8B5A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A202602152FEE9DACD9ADE32;
+			remoteInfo = Mountain;
+		};
 		CFA384532FAA0FF48B9EF8F4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C93EBCE60E4FA3B5B1E8B5A4 /* Project object */;
@@ -28,16 +36,19 @@
 
 /* Begin PBXFileReference section */
 		073A23E6D2045B063B1B14B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		11D24E82EF834986C77860F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1F1858F3D87B04E7476D70CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		28801ECA7272909EA4CC6F1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CC09170545BFB1C6AC7BA59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		68831FECD66DBD7762BD9BD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7223E53B3B780EC301C4A35E /* MountainUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MountainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7886F080C3CD70B192844D9 /* MountainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainTests.swift; sourceTree = "<group>"; };
 		B6A20B3A4BD19D9831B3ACC4 /* MountainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MountainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33563E95CA5B0D6BBEBE138 /* Mountain.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Mountain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF7DC6A3708D8F8DBBAE3E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E66B1CB83BCA90A45766692D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8F479B77102E3D36EB38BDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF41456D54FDDFB81575B70B /* MountainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -46,6 +57,7 @@
 			children = (
 				C33563E95CA5B0D6BBEBE138 /* Mountain.app */,
 				B6A20B3A4BD19D9831B3ACC4 /* MountainTests.xctest */,
+				7223E53B3B780EC301C4A35E /* MountainUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +67,7 @@
 			children = (
 				726A5A66AAD247ED77359F79 /* Mountain */,
 				82BF435E6CB066D71A52D414 /* MountainTests */,
+				A41CA542EED8A6F54F18D859 /* MountainUITests */,
 				2E2A67D3C4C14FA42E61BA01 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +95,15 @@
 			path = MountainTests;
 			sourceTree = "<group>";
 		};
+		A41CA542EED8A6F54F18D859 /* MountainUITests */ = {
+			isa = PBXGroup;
+			children = (
+				11D24E82EF834986C77860F7 /* Info.plist */,
+				FF41456D54FDDFB81575B70B /* MountainUITests.swift */,
+			);
+			path = MountainUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -101,6 +123,22 @@
 			productName = Mountain;
 			productReference = C33563E95CA5B0D6BBEBE138 /* Mountain.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BB131FF194B98FA62A533F61 /* MountainUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80FB09D93EFBD229CCD93E2C /* Build configuration list for PBXNativeTarget "MountainUITests" */;
+			buildPhases = (
+				EF530175E881725699BEFB5F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				161EC8FB2D3B8330C267120D /* PBXTargetDependency */,
+			);
+			name = MountainUITests;
+			productName = MountainUITests;
+			productReference = 7223E53B3B780EC301C4A35E /* MountainUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		DECB3627F22653FA67954F06 /* MountainTests */ = {
 			isa = PBXNativeTarget;
@@ -129,6 +167,9 @@
 					A202602152FEE9DACD9ADE32 = {
 						ProvisioningStyle = Manual;
 					};
+					BB131FF194B98FA62A533F61 = {
+						TestTargetID = A202602152FEE9DACD9ADE32;
+					};
 				};
 			};
 			buildConfigurationList = 155E61777855E9B63C6C88F3 /* Build configuration list for PBXProject "Mountain" */;
@@ -144,6 +185,7 @@
 			targets = (
 				A202602152FEE9DACD9ADE32 /* Mountain */,
 				DECB3627F22653FA67954F06 /* MountainTests */,
+				BB131FF194B98FA62A533F61 /* MountainUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -201,9 +243,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF530175E881725699BEFB5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420C90A6FE06263CAE0A8CDA /* MountainUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		161EC8FB2D3B8330C267120D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A202602152FEE9DACD9ADE32 /* Mountain */;
+			targetProxy = 59DF5817EAD31C71A307560B /* PBXContainerItemProxy */;
+		};
 		ACEFDCD12A2DE93562171DF1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A202602152FEE9DACD9ADE32 /* Mountain */;
@@ -231,6 +286,102 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		027A0C02F11BD73E075C1E67 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MountainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.takaoh717.MountainTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mountain.app/Mountain";
+			};
+			name = Staging;
+		};
+		03EAFFD78F25BD9FBEB495C9 /* Develop */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = $TARGET_NAME;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Develop;
+		};
+		1226F38B9A4C1A6AB2830CA1 /* Develop */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MountainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.takaoh717.MountainTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mountain.app/Mountain";
+			};
+			name = Develop;
+		};
+		1F3BEA903E4130614713E34D /* Develop */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MountainUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.takaoh717.MountainUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mountain;
+			};
+			name = Develop;
+		};
+		25C8E3F5A74914B60793387E /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MountainUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.takaoh717.MountainUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mountain;
+			};
+			name = Staging;
+		};
+		435B025CEFA4E4CA57567315 /* Develop */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				INFOPLIST_FILE = Mountain/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.takaoh717.Mountain;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Develop;
+		};
 		54A4FA0081530655D38A94A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -263,6 +414,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -283,7 +435,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = $TARGET_NAME;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -324,6 +476,23 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mountain.app/Mountain";
 			};
 			name = Release;
+		};
+		B17D45B36A1B2E76D936F4A6 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				INFOPLIST_FILE = Mountain/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.takaoh717.Mountain;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Staging;
 		};
 		B596FF82FAF46E87CFC9CCF4 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -374,6 +543,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -386,11 +556,56 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = $TARGET_NAME;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E723E1754CECB087B2776115 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = $TARGET_NAME;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Staging;
+		};
+		EDC85F25CDB55FD07A3D62F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MountainUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.takaoh717.MountainUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mountain;
+			};
+			name = Debug;
+		};
+		F5F3DC6F768BD7FC05B1FD0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MountainUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.takaoh717.MountainUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mountain;
 			};
 			name = Release;
 		};
@@ -418,7 +633,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65301ADE6396A7C05BC06A6D /* Debug */,
+				1226F38B9A4C1A6AB2830CA1 /* Develop */,
 				AC24622671AB227758FC01C5 /* Release */,
+				027A0C02F11BD73E075C1E67 /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -427,7 +644,20 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				54A4FA0081530655D38A94A3 /* Debug */,
+				03EAFFD78F25BD9FBEB495C9 /* Develop */,
 				DBC164EDAEB7AB46271833D4 /* Release */,
+				E723E1754CECB087B2776115 /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		80FB09D93EFBD229CCD93E2C /* Build configuration list for PBXNativeTarget "MountainUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC85F25CDB55FD07A3D62F1 /* Debug */,
+				1F3BEA903E4130614713E34D /* Develop */,
+				F5F3DC6F768BD7FC05B1FD0E /* Release */,
+				25C8E3F5A74914B60793387E /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -436,7 +666,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FBAD80BEC6A8DFF2EFA881A9 /* Debug */,
+				435B025CEFA4E4CA57567315 /* Develop */,
 				B596FF82FAF46E87CFC9CCF4 /* Release */,
+				B17D45B36A1B2E76D936F4A6 /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
